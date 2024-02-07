@@ -18,7 +18,3 @@ use App\Http\Controllers\API\EstanteriaController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-Route::middleware('auth:sanctum')->group(function () {
-    Route::apiResource('/estanterias', EstanteriaController::class);
-});
