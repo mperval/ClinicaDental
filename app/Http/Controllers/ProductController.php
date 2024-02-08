@@ -45,10 +45,10 @@ class ProductController extends Controller
     {
         // Validar los datos de entrada
     $request->validate([
-        'nombre' => 'required|alpha',
-        'descripcion' => 'required',
-        'precio' => 'required|numeric',
-        'stock' => 'required|integer',
+        'nombre' => 'required|alpha', // Debe ser obligatorio (required) y contener solo caracteres alfabéticos (alpha).
+        'descripcion' => 'required',//Debe ser obligatorio.
+        'precio' => 'required|numeric',//Debe ser obligatorio y numérico.
+        'stock' => 'required|integer', //Debe ser obligatorio y un número entero.
     ]);
 
     // Crear una nueva instancia de Product
